@@ -505,11 +505,6 @@
                         "default": "Active Label Button 1",
                         "minLength": 1
                     },
-                    "kirocord.status.buttons.button1.active.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                        "minLength": 1
-                    },
                     "kirocord.status.buttons.button1.inactive.enabled": {
                         "type": "boolean",
                         "default": false
@@ -519,11 +514,6 @@
                         "default": "Inactive Label Button 1",
                         "minLength": 1
                     },
-                    "kirocord.status.buttons.button1.inactive.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                        "minLength": 1
-                    },
                     "kirocord.status.buttons.button1.idle.enabled": {
                         "type": "boolean",
                         "default": false
@@ -531,11 +521,6 @@
                     "kirocord.status.buttons.button1.idle.label": {
                         "type": "string",
                         "default": "Idle Label Button 1",
-                        "minLength": 1
-                    },
-                    "kirocord.status.buttons.button1.idle.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                         "minLength": 1
                     },
                     "kirocord.status.buttons.button1.git.active.enabled": {
@@ -594,11 +579,6 @@
                         "default": "Active Label Button 2",
                         "minLength": 1
                     },
-                    "kirocord.status.buttons.button2.active.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                        "minLength": 1
-                    },
                     "kirocord.status.buttons.button2.inactive.enabled": {
                         "type": "boolean",
                         "default": false
@@ -606,11 +586,6 @@
                     "kirocord.status.buttons.button2.inactive.label": {
                         "type": "string",
                         "default": "Inactive Label Button 2",
-                        "minLength": 1
-                    },
-                    "kirocord.status.buttons.button2.inactive.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                         "minLength": 1
                     },
                     "kirocord.status.buttons.button2.idle.enabled": {
@@ -622,11 +597,6 @@
                         "default": "Idle Label Button 2",
                         "minLength": 1
                     },
-                    "kirocord.status.buttons.button2.idle.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                        "minLength": 1
-                    },
                     "kirocord.status.buttons.button2.git.active.enabled": {
                         "type": "boolean",
                         "default": false
@@ -634,11 +604,6 @@
                     "kirocord.status.buttons.button2.git.active.label": {
                         "type": "string",
                         "default": "Git Active Label Button 2",
-                        "minLength": 1
-                    },
-                    "kirocord.status.buttons.button2.git.active.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                         "minLength": 1
                     },
                     "kirocord.status.buttons.button2.git.inactive.enabled": {
@@ -650,11 +615,6 @@
                         "default": "Git Inactive Label Button 2",
                         "minLength": 1
                     },
-                    "kirocord.status.buttons.button2.git.inactive.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                        "minLength": 1
-                    },
                     "kirocord.status.buttons.button2.git.idle.enabled": {
                         "type": "boolean",
                         "default": false
@@ -662,11 +622,6 @@
                     "kirocord.status.buttons.button2.git.idle.label": {
                         "type": "string",
                         "default": "Git Idle Label Button 2",
-                        "minLength": 1
-                    },
-                    "kirocord.status.buttons.button2.git.idle.url": {
-                        "type": "string",
-                        "default": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                         "minLength": 1
                     }
                 }
