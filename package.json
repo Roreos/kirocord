@@ -5,7 +5,7 @@
     "description": "Highly customizable Discord Rich Presence extension for Kiro IDE",
     "main": "dist/extension.js",
     "repository": "github:Roreos/kirocord",
-    "publisher": "Roreos",
+    "publisher": "rorellodevelopment",
     "contributors": [
         "xhayper <hayper1919@gmail.com>"
     ],

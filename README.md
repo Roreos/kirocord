@@ -2,7 +2,7 @@
 
 # KiroCord
 
-<img width="256" alt="KiroCord Logo" src="https://iq.wiki/cdn-cgi/image/width=1920,quality=70/https://ipfs.everipedia.org/ipfs/QmPtoxPmpnNMViu2UW9THH7BN3PE1soinkD4pFKdZRcfPy" />
+<img src="https://github.com/Roreos/kirocord/raw/main/assets/kiro_logo.png" width="256" alt="KiroCord Logo">
 
 Discord Rich Presence for Kiro IDE
 

@@ -103,10 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# Suck my ass
-suckmyass
-# wtf leonardssh
-
 .pnp.*
 .yarn/*
 !.yarn/patches
