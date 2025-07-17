@@ -3,10 +3,7 @@ import { CONFIG_KEYS } from "../constants";
 
 export const getApplicationId = (config: ExtensionConfiguration) => {
     const applicationIds = new Map([
-        ["Code", "782685898163617802"],
-        ["Visual Studio Code", "810516608442695700"],
-        ["VSCodium", "1031067701474492496"],
-        ["Cursor", "1376937466619232256"],
+        ["Kiro", "1395076707911733340"], // Using a unique ID for Kiro
         ["Custom", config.get(CONFIG_KEYS.App.Id)!]
     ]);
 

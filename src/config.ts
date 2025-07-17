@@ -6,7 +6,7 @@ export type FileSizeStandard = "iec" | "jedec";
 
 export interface ExtensionConfigurationType {
     "app.id": string;
-    "app.name": "Code" | "Visual Studio Code" | "VSCodium" | "Cursor" | "Custom";
+    "app.name": "Kiro" | "Code" | "Visual Studio Code" | "VSCodium" | "Cursor" | "Custom";
     "app.privacyMode.enable": boolean;
     "app.whitelistEnabled": boolean;
     "app.whitelistIsBlacklist": boolean;
@@ -296,4 +296,4 @@ export type WorkspaceConfigurationWithType<Configuration extends Record<string, 
 
 export type ExtensionConfiguration = WorkspaceConfigurationWithType<ExtensionConfigurationType>;
 
-export const getConfig = () => workspace.getConfiguration("vscord") as ExtensionConfiguration;
+export const getConfig = () => workspace.getConfiguration("kirocord") as ExtensionConfiguration;

@@ -372,15 +372,21 @@ export const getPresenceButtons = async (
 export const replaceAppInfo = (text: string): string => {
     text = text.slice();
     const { appName } = env;
-
+    
+    // Override app name to always show "Kiro" regardless of actual app name
+    const displayAppName = "Kiro";
+    
     const isInsider = appName.includes("Insiders");
     const isCodium = appName.startsWith("VSCodium") || appName.startsWith("codium");
     const isCursor = appName.startsWith("Cursor");
+    const isKiro = true; // Always treat as Kiro
 
     const insiderAppName = isCodium ? "vscodium-insiders" : "vscode-insiders";
     let normalAppName;
 
-    if (isCursor) {
+    if (isKiro) {
+        normalAppName = "kiro";
+    } else if (isCursor) {
         normalAppName = "cursor";
     } else if (isCodium) {
         normalAppName = "vscodium";
@@ -389,7 +395,7 @@ export const replaceAppInfo = (text: string): string => {
     }
 
     const replaceMap = new Map([
-        ["{app_name}", appName],
+        ["{app_name}", displayAppName],
         ["{app_id}", isInsider ? insiderAppName : normalAppName]
     ]);
 

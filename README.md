@@ -1,79 +1,40 @@
 <div align="center">
 
-[<img width="256" alt="VSCord Logo" src="https://i.imgur.com/n7ieZfW.png" />][vsmp-link]
+# KiroCord
 
-<br />
+<img width="256" alt="KiroCord Logo" src="https://iq.wiki/cdn-cgi/image/width=1920,quality=70/https://ipfs.everipedia.org/ipfs/QmPtoxPmpnNMViu2UW9THH7BN3PE1soinkD4pFKdZRcfPy" />
 
-[![Visual Studio Marketplace Version][shield-vsmp-version]][vsmp-link]
-[![Visual Studio Marketplace Downloads][shield-vsmp-downloads]][vsmp-link]
-[![Visual Studio Marketplace Installs][shield-vsmp-installs]][vsmp-link]
-[![Visual Studio Marketplace Rating][shield-vsmp-rating]][vsmp-link]
-
-[![Open VSX Version][shield-ovsx-version]][ovsx-link]
-[![Open VSX Downloads][shield-ovsx-downloads]][ovsx-link]
-[![Open VSX Rating][shield-ovsx-rating]][ovsx-link]
-
-[![Continuous Integration][shield-workflows-ci]][github-workflows-ci]
-[![Gitter Support Chat][shield-gitter-support]][gitter-vscord-support]
-
-[![Continuous Delivery][shield-workflows-cd]][github-workflows-cd]
+Discord Rich Presence for Kiro IDE
 
 </div>
 
-<br />
+## About KiroCord
 
-# VSCord
+KiroCord is a Discord Rich Presence extension specifically designed for the Kiro IDE by AWS. This extension allows you to showcase your development activity on Discord while using Kiro IDE.
 
-Highly customizable [Discord Rich Presence](https://discord.com/rich-presence) extension for [Visual Studio Code](https://code.visualstudio.com/)
+## Features
 
-> Remember to 🌟 this GitHub if you 💖 it.
+- Shows what you're working on in Kiro IDE
+- Customizable application name display
+- Packed with 60+ extension settings
+- Support for over 130+ programming languages
+- Custom images support (using HTTP links)
+- Custom button links
+- Detects debugging sessions
+- Detects when you are idling
 
-## Disclaimer
+## Configuration
 
-This extension does not work with snapstore / flatpak version of VSCode, please use the official version from the VSCode website!
+The extension provides numerous configuration options to customize your Discord Rich Presence. You can modify these settings through the Kiro IDE settings interface.
 
-## 📌 Features
+### Available Variables
 
-- Shows what you're working on!
-- Switch between 4 IDE names (`Code`, `Visual Studio Code`, `VSCodium`, and `Cursor`) or a custom one if you wish!
-- Packed with 60+ extension settings!
-- Tons of variable to use!
-- Support for over 130+ of the most popular languages!
-- Support custom images (using HTTP link)
-- Support custom button link!
-- Support flatpak / snapstore version of Discord!
-- Detect when you are Debugging!
-- Detect when you are using the [Insiders build](https://code.visualstudio.com/insiders/)!
-- Detect when you are Idling!
-
-## 👀 Preview
-
-![1](https://i.imgur.com/LaB4TqM.png)
-![2](https://i.imgur.com/yTFIFiK.png)
-![3](https://i.imgur.com/5OOkKUW.png)
-
-## 📥 Installation
-
-Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
-
-```
-ext install LeonardSSH.vscord
-```
-
-**OR**
-
-Use the **[Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery)**
-
-![a4](https://i.imgur.com/qMzox38.gif)
-
-## ⚙️ Configuration
-
-The following variables will be replaced with the respective value in custom strings.<br>
+The following variables will be replaced with their respective values in custom strings:
 
 | Variable                              | Value                                              |
 | ------------------------------------- | -------------------------------------------------- |
 | `{app_name}`                          | current editor name                                |
-| `{app_id}`                            | editor name that's suitable for using inside url   |
+| `{app_id}`                            | editor name suitable for URLs                      |
 | `{file_name}`                         | name of the file                                   |
 | `{file_extension}`                    | extension of the file                              |
 | `{file_size}`                         | size of the file                                   |
@@ -85,7 +46,7 @@ The following variables will be replaced with the respective value in custom str
 | `{workspace_folder}`                  | name of the workspace folder                       |
 | `{workspace_and_folder}`              | name of the workspace and folder                   |
 | `{lang}` \| `{Lang}` \| `{LANG}`      | format of the lang string (css, Css, CSS)          |
-| `{a_lang}` \| `{a_Lang}`\| `{a_LANG}` | same as the above, but prefixes with "a" or "an"   |
+| `{a_lang}` \| `{a_Lang}`\| `{a_LANG}` | same as above, but prefixes with "a" or "an"       |
 | `{problems}`                          | problems text defined in settings                  |
 | `{problems_count}`                    | number of problems                                 |
 | `{problems_count_errors}`             | number of problems that are errors                 |
@@ -106,44 +67,19 @@ The following variables will be replaced with the respective value in custom str
 | `{git_url}`                           | url link to the git repository                     |
 | `{empty}`                             | an empty space                                     |
 
-## 👨‍💻 Contributing
+## Credits
 
-To contribute to this repository, feel free to create a new fork of the repository and submit a pull request.
+KiroCord is a fork of [VSCord](https://github.com/LeonardSSH/vscord), a Discord Rich Presence extension for Visual Studio Code. This extension would not exist without the original work by LeonardSSH and contributors.
 
-1. Fork / Clone the `main` branch.
-2. Create a new branch in your fork.
-3. Make your changes.
-4. Commit your changes and push them.
-5. Submit a Pull Request [here](https://github.com/LeonardSSH/vscord/pulls)!
+## Developer
 
-## 👨‍💻 Adding a new language
+**KiroCord** is developed and maintained by:
 
-We have a guide for adding a new language [here](ADDING_LANGUAGE.md)!
+- **Developer**: Roreos
+- **Company**: Rorello Development
+- **GitHub**: [Roreos](https://github.com/Roreos)
+- **Email**: rorellodevelopment@gmail.com
 
-## 🎉 Thanks
-
-- [discordjs](https://github.com/discordjs/) - Creator of Discord RPC Client
-- [iCrawl](https://github.com/iCrawl) - Creator of [discord-vscode](https://github.com/iCrawl/discord-vscode)
-- [Satoqz](https://github.com/Satoqz) - Creator of [vscode-discord](https://github.com/Satoqz/vscode-discord/)
-
-_Much of the code in this repository is based on [iCrawl/discord-vscode](https://github.com/iCrawl/discord-vscode) & [Satoqz/vscode-discord](https://github.com/Satoqz/vscode-discord). This extension would not exist without them._
-
-## 📋 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-[vsmp-link]: https://marketplace.visualstudio.com/items?itemName=LeonardSSH.vscord
-[ovsx-link]: https://open-vsx.org/extension/LeonardSSH/vscord
-[shield-vsmp-version]: https://img.shields.io/visual-studio-marketplace/v/LeonardSSH.vscord?label=Visual%20Studio%20Marketplace
-[shield-vsmp-downloads]: https://img.shields.io/visual-studio-marketplace/d/LeonardSSH.vscord
-[shield-vsmp-installs]: https://img.shields.io/visual-studio-marketplace/i/LeonardSSH.vscord
-[shield-vsmp-rating]: https://img.shields.io/visual-studio-marketplace/r/LeonardSSH.vscord
-[shield-ovsx-version]: https://img.shields.io/open-vsx/v/LeonardSSH/vscord?label=OpenVSX%20Marketplace
-[shield-ovsx-downloads]: https://img.shields.io/open-vsx/dt/LeonardSSH/vscord
-[shield-ovsx-rating]: https://img.shields.io/open-vsx/rating/LeonardSSH/vscord
-[github-workflows-ci]: https://github.com/leonardssh/vscord/actions/workflows/CI.yml
-[shield-workflows-ci]: https://github.com/leonardssh/vscord/actions/workflows/CI.yml/badge.svg
-[github-workflows-cd]: https://github.com/leonardssh/vscord/actions/workflows/CD.yml
-[shield-workflows-cd]: https://github.com/leonardssh/vscord/actions/workflows/CD.yml/badge.svg
-[gitter-vscord-support]: https://gitter.im/LeonardSSH/vscord-support?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-[shield-gitter-support]: https://img.shields.io/badge/gitter-support%20chat-green?color=40aa8b

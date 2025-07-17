@@ -26,18 +26,18 @@ class EditorController {
         }
 
         const whenDisconnected: Partial<StatusBarItem> = {
-            text: "$(warning) Discord RPC",
+            text: "$(warning) Kiro Discord",
             tooltip: "Disconnected. Click to reconnect",
-            command: "vscord.reconnect"
+            command: "kirocord.reconnect"
         };
         const whenPending: Partial<StatusBarItem> = {
-            text: "$(pulse) Discord RPC",
+            text: "$(pulse) Kiro Discord",
             tooltip: "Please, wait. Connecting to Discord Gateway..."
         };
         const whenSucceeded: Partial<StatusBarItem> = {
-            text: "Discord RPC",
+            text: "Kiro Discord",
             tooltip: "Connected to Discord Gateway. Click to disconnect",
-            command: "vscord.disconnect"
+            command: "kirocord.disconnect"
         };
         const statusBarItemByMode = {
             [StatusBarMode.Disconnected]: whenDisconnected,

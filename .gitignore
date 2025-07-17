@@ -116,7 +116,7 @@ suckmyass
 !.yarn/versions
 
 # package
-vscord-*.vsix
+kirocord-*.vsix
 
 # macOS
 .DS_Store

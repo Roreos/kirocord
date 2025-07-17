@@ -67,7 +67,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
         await controller.sendActivity(dataClass.editor != null);
     };
 
-    const enableCommand = commands.registerCommand("vscord.enable", async () => {
+    const enableCommand = commands.registerCommand("kirocord.enable", async () => {
         await disable(false);
         await enable(false);
 
@@ -77,7 +77,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Enabled Discord Rich Presence");
     });
 
-    const disableCommand = commands.registerCommand("vscord.disable", async () => {
+    const disableCommand = commands.registerCommand("kirocord.disable", async () => {
         logInfo("Disabled Discord Rich Presence");
 
         await disable(false);
@@ -86,7 +86,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Disabled Discord Rich Presence");
     });
 
-    const enableWorkspaceCommand = commands.registerCommand("vscord.workspace.enable", async () => {
+    const enableWorkspaceCommand = commands.registerCommand("kirocord.workspace.enable", async () => {
         logInfo("Enabled Discord Rich Presence");
 
         await disable();
@@ -96,7 +96,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Enabled Discord Rich Presence for this workspace");
     });
 
-    const disableWorkspaceCommand = commands.registerCommand("vscord.workspace.disable", async () => {
+    const disableWorkspaceCommand = commands.registerCommand("kirocord.workspace.disable", async () => {
         logInfo("Disabled Discord Rich Presence");
 
         await disable();
@@ -105,7 +105,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Disabled Discord Rich Presence for this workspace");
     });
 
-    const reconnectCommand = commands.registerCommand("vscord.reconnect", async () => {
+    const reconnectCommand = commands.registerCommand("kirocord.reconnect", async () => {
         logInfo("Reconnecting to Discord Gateway...");
 
         editor.setStatusBarItem(StatusBarMode.Pending);
@@ -120,7 +120,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             });
     });
 
-    const disconnectCommand = commands.registerCommand("vscord.disconnect", async () => {
+    const disconnectCommand = commands.registerCommand("kirocord.disconnect", async () => {
         logInfo("Disconnecting from Discord Gateway...");
 
         await controller.destroy();
@@ -128,7 +128,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
         editor.setStatusBarItem(StatusBarMode.Disconnected);
     });
 
-    const enablePrivacyModeCommand = commands.registerCommand("vscord.enablePrivacyMode", async () => {
+    const enablePrivacyModeCommand = commands.registerCommand("kirocord.enablePrivacyMode", async () => {
         logInfo("Enabled Privacy Mode");
 
         await togglePrivacyMode(true);
@@ -137,7 +137,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Enabled Privacy Mode.");
     });
 
-    const disablePrivacyModeCommand = commands.registerCommand("vscord.disablePrivacyMode", async () => {
+    const disablePrivacyModeCommand = commands.registerCommand("kirocord.disablePrivacyMode", async () => {
         logInfo("Disabled Privacy Mode");
 
         await togglePrivacyMode(false);
@@ -146,7 +146,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Disabled Privacy Mode.");
     });
 
-    const startIdlingCommand = commands.registerCommand("vscord.startIdling", async () => {
+    const startIdlingCommand = commands.registerCommand("kirocord.startIdling", async () => {
         logInfo("Started Idling");
 
         controller.manualIdling = true;
@@ -156,7 +156,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
             await window.showInformationMessage("Started Idling.");
     });
 
-    const stopIdlingCommand = commands.registerCommand("vscord.stopIdling", async () => {
+    const stopIdlingCommand = commands.registerCommand("kirocord.stopIdling", async () => {
         logInfo("Stopped Idling");
 
         controller.manualIdling = false;
@@ -183,7 +183,7 @@ export const registerCommands = (ctx: ExtensionContext) => {
 };
 
 export async function activate(ctx: ExtensionContext) {
-    logInfo("Discord Rich Presence for VS Code activated.");
+    logInfo("Discord Rich Presence for Kiro IDE activated.");
     registerCommands(ctx);
     registerListeners(ctx);
 
@@ -191,7 +191,7 @@ export async function activate(ctx: ExtensionContext) {
 }
 
 export async function deactivate() {
-    logInfo("Discord Rich Presence for VS Code deactivated.");
+    logInfo("Discord Rich Presence for Kiro IDE deactivated.");
     await controller.destroy();
     logInfo("[004] Destroyed Discord RPC client");
 }

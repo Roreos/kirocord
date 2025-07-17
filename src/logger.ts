@@ -1,7 +1,7 @@
 import { isObject } from "./helpers/isObject";
 import { window } from "vscode";
 
-const outputChannel = window.createOutputChannel("VSCord");
+const outputChannel = window.createOutputChannel("KiroCord");
 
 export const enum LogLevel {
     INFO = "INFO",
