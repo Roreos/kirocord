@@ -10,7 +10,7 @@
         "xhayper <hayper1919@gmail.com>"
     ],
     "license": "MIT",
-    "private": true,
+    "private": false,
     "icon": "assets/icon.png",
     "bugs": {
         "url": "https://github.com/Roreos/kirocord/issues"
